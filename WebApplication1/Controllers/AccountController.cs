@@ -247,6 +247,7 @@ namespace WebApplication1.Controllers
                 return InternalServerError();
             }
 
+
             if (externalLogin.LoginProvider != provider)
             {
                 Authentication.SignOut(DefaultAuthenticationTypes.ExternalCookie);
